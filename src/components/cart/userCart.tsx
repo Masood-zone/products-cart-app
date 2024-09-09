@@ -13,7 +13,10 @@ function UserCart({
   clearAll: () => void;
 }) {
   const [showModal, setShowModal] = useState(false);
-  const total = cartItems.reduce((curr, acc) => curr + acc.price, 0);
+  const total = cartItems.reduce(
+    (curr, item) => curr + item.price * item.quantity,
+    0
+  );
 
   const handleShowModal = () => {
     setShowModal(!showModal);
