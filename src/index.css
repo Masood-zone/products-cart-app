@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rose-50: #f9fafb;
+  --rose-100: #e5d5be;
+  --rose-300: #e0d5c7;
+  --rose-400: #d6cec3;
+  --rose-500: #c4b7a9;
+  --rose-900: #1a1546;
+  --red: #0e1525;
+  --green: #0a1f23;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: var(--rose-50);
+}
